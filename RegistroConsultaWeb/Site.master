@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RegistroConsultaWeb.Site_Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title><%:Page.Title%>JP Rent A Car</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/popper.js"></script> 
+    <script src="StyleSheet1.css"></script>
+<script src="//code.jquery.com/jquery.min.js"></script
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+
+      
+       
+    </asp:PlaceHolder>
+
+    <style type="text/css">
+        .auto-style2 {
+            font-size: 30pt;
+        }
+</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <%--menu principal--%>
+          <div class="row">
+               <div>
+
+                  <nav class="navbar navbar-default">
+                      <div class="container-fluid">
+                          <div class="navbar-header">
+                             <a class="navbar-brand" href="/default.aspx">JP Rent A Car</a>
+                       </div>
+
+                       <ul class="nav navbar-nav">
+                          <li class="active"><a href="/Registros/rUsuarios.aspx"><span class="glyphicon glyphicon-book"></span> Registros</a></li>
+                      </ul>
+
+                      <ul class="nav navbar-nav">
+                            <li class="active"><a href="/Consultas/cUsuarios.aspx"><span class="glyphicon glyphicon-list-alt"></span> Consultas</a></li>
+                      </ul>
+
+                      <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Ayuda</a></li>
+                      </ul>
+
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-remove-sign"></span> Cerrar sesion</a></li>
+                          </ul>
+                      </nav>
+                 </div>
+</div>    
+    <div>
+        <%--contenedor y pie de pagina--%>
+            <div class =" container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <hr />
+                <footer>
+                    <p> &copy; <%: DateTime.Now.Year %> - Copyright Jp Rent A Car</p>
+                </footer>
+</div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
