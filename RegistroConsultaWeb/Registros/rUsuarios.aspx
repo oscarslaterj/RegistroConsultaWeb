@@ -102,13 +102,13 @@
 
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-               Nivel de Acceso
+                Nivel de Acceso
   <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#">Administrador</a></li>
                 <li><a href="#">Usuario</a></li>
-            
+
             </ul>
         </div>
     </div>
@@ -159,7 +159,7 @@
 
         </div>
 
-         <div class="col-lg-8 col-lg-offset-4">
+        <div class="col-lg-8 col-lg-offset-4">
 
             <button type="submit" class="btn btn-danger">Eliminar</button>
 
